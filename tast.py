@@ -22,26 +22,33 @@ frame2 = cv.cvtColor(frame2, cv.COLOR_BGR2GRAY)
 height, width = frame1.shape[:2]
 frame1 = cv.resize(frame1,(width // 10, height // 10), interpolation = cv.INTER_CUBIC)
 
+
+def square(ρ, φ):
+    a = ρ
+    b = ρ * np.sin(φ)
+    return np.sqrt(a**2 + b**2)
+
+def polar_to_cart(ρ, φ, center):
+    x = ρ * np.cos(φ) + center[0]
+    y = ρ * np.sin(φ) + center[1]
+    return int(x), int(y)
+
 def circleToRect(frame):
-    def polar_to_cart(ρ, φ, center):
-        x = ρ  * np.cos(φ) + center[0]
-        y = ρ  * np.cos(φ) + center[1]
-        return int(x), int(y)
-    
     w, h = frame.shape[:2]
     rez = np.zeros([w,h])
-    y = 0
     for ρ in np.linspace(start = 0, stop = w/2, num = w-1):
-        x = 0
-        for φ in np.linspace(start = 0, stop = np.radians(180), num = h-1):
-            nx, ny = polar_to_cart(x, y, (w/2, h/2))
+        for φ in np.linspace(start = 0, stop = np.radians(360), num = h-1):
+            nx, ny = polar_to_cart(ρ, φ, (w/2, h/2))
+            x, y = polar_to_cart(square(ρ, φ), φ, (w/2, h/2))
 #            print(x, y, ρ, φ, nx, ny)
             try:
-                rez[y,x] = frame[nx, ny]
-                print(x, y, nx, ny)
-                break
+                rez[x,y] = frame[nx, ny]
+#                print(round(ρ,2), round(φ, 2), x, y, nx, ny)
+#                break
             except IndexError:
+                print(x,y,nx,ny)
                 pass
+                
             x += 1
         y += 1
     return rez
