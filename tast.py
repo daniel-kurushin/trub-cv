@@ -23,19 +23,27 @@ height, width = frame1.shape[:2]
 frame1 = cv.resize(frame1,(width // 10, height // 10), interpolation = cv.INTER_CUBIC)
 
 def circleToRect(frame):
-    def rect_to_circle(a,b):
-        a = a - w//2
-        b = b - h//2
-        r = a
-        f = a / b
-        return a, b
+    def polar_to_cart(ρ, φ, center):
+        x = ρ  * np.cos(φ) + center[0]
+        y = ρ  * np.cos(φ) + center[1]
+        return int(x), int(y)
     
     w, h = frame.shape[:2]
     rez = np.zeros([w,h])
-    for x in range(w):
-        for y in range(h):
-            nx, ny = rect_to_circle(x, y)
-            rez[x,y] = frame[nx, ny]
+    y = 0
+    for ρ in np.linspace(start = 0, stop = w/2, num = w-1):
+        x = 0
+        for φ in np.linspace(start = 0, stop = np.radians(180), num = h-1):
+            nx, ny = polar_to_cart(x, y, (w/2, h/2))
+#            print(x, y, ρ, φ, nx, ny)
+            try:
+                rez[y,x] = frame[nx, ny]
+                print(x, y, nx, ny)
+                break
+            except IndexError:
+                pass
+            x += 1
+        y += 1
     return rez
 
 plt.imshow(frame1, 'gray')
