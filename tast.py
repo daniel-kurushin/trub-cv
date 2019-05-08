@@ -35,22 +35,19 @@ def polar_to_cart(ρ, φ, center):
 
 def circleToRect(frame):
     w, h = frame.shape[:2]
+    c    = (w//2, h//2)
     rez = np.zeros([w,h])
-    for ρ in np.linspace(start = 0, stop = w/2, num = w-1):
-        for φ in np.linspace(start = 0, stop = np.radians(360), num = h-1):
-            nx, ny = polar_to_cart(ρ, φ, (w/2, h/2))
-            x, y = polar_to_cart(square(ρ, φ), φ, (w/2, h/2))
-#            print(x, y, ρ, φ, nx, ny)
+    ρ = w // 2
+    for x in range(w):
+        for y in range(h):
+            φ = np.arctan((y - c[0])/(x - c[1])) if x - c[1] != 0 else np.radians(90)
+            nx, ny = polar_to_cart(ρ, φ, c)
             try:
-                rez[x,y] = frame[nx, ny]
-#                print(round(ρ,2), round(φ, 2), x, y, nx, ny)
-#                break
+                rez[w-x-1,y] = frame[nx, ny]
             except IndexError:
-                print(x,y,nx,ny)
-                pass
-                
-            x += 1
-        y += 1
+                print(x, y, nx, ny)
+                break
+        ρ -= 1
     return rez
 
 plt.imshow(frame1, 'gray')
@@ -67,3 +64,20 @@ plt.show()
 #frame2 = cv.resize(frame2,(width // 10, height // 10), interpolation = cv.INTER_CUBIC)
 #plt.imshow(frame2, 'gray')
 #plt.show()
+
+
+#    for ρ in np.linspace(start = 0, stop = w/2, num = w-1):
+#        for φ in np.linspace(start = 0, stop = np.radians(360), num = h-1):
+#            nx, ny = polar_to_cart(ρ, φ, (w/2, h/2))
+#            x, y = polar_to_cart(square(ρ, φ), φ, (w/2, h/2))
+##            print(x, y, ρ, φ, nx, ny)
+#            try:
+#                rez[x,y] = frame[nx, ny]
+##                print(round(ρ,2), round(φ, 2), x, y, nx, ny)
+##                break
+#            except IndexError:
+#                print(x,y,nx,ny)
+#                pass
+#                
+#            x += 1
+#        y += 1
