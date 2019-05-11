@@ -8,36 +8,41 @@ Created on Tue May  7 14:30:43 2019
 
 import numpy as np
 import cv2 as cv
-from matplotlib import pyplot as plt
-
-def square(ρ, φ):
-    a = ρ
-    b = ρ * np.sin(φ)
-    return np.sqrt(a**2 + b**2)
-
-def polar_to_cart(ρ, φ, center):
-    x = ρ * np.cos(φ) + center[0]
-    y = ρ * np.sin(φ) + center[1]
-    return int(x), int(y)
-
-img1 = cv.imread('in.png')
-img1 = cv.cvtColor(img1, cv.COLOR_BGR2GRAY)
-plt.imshow(img1, vmax = 255, vmin = 0)
-plt.show()
-h, w = img1.shape[:2]
-c = w//2, h//2
-
-img2 = np.zeros([w,h])*255
-ρ = 9
-for x in range(w):
-    for y in [0]:
-        φ = np.arctan((y - c[0])/(x - c[1])) if x - c[1] != 0 else np.radians(90)
-        nx, ny = polar_to_cart(ρ, φ, c)
-        try:
-            img2[y,x] = img1[ny,nx]
-        except IndexError:
-            print(nx, ny)
 
 
-plt.imshow(img2, vmax = 255, vmin = 0)
-plt.show()
+
+def roundrect(img):
+
+    def polar_to_cart(ρ, φ, center):
+        x = ρ * np.cos(φ) + center[0]
+        y = ρ * np.sin(φ) + center[1]
+        return int(x), int(y)
+
+    img = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
+    h, w = img.shape[:2]
+    c = w//2, h//2
+    out = np.ones([w,h]) * 255
+    
+    for x in range(w):
+        for y in range(h):
+            φ = np.radians(0) + np.arctan((x - c[0])/(y - c[1])) if y - c[1] != 0 else np.radians(90)
+            ρ = max(abs(x-c[0]),abs(y-c[1])) if y > h // 2 else -max(abs(x-c[0]),abs(y-c[1]))
+            nx, ny = polar_to_cart(ρ, φ, c)
+            out[y, x] = img[nx,ny]
+            
+    return out
+
+
+if __name__ == '__main__':
+    from matplotlib import pyplot as plt
+    
+    for i in [0,1,2,3,4]:
+        img1 = cv.imread('in%s.png' % i)
+
+        plt.imshow(img1, 'gray', vmax = 255, vmin = 0)
+        plt.show()
+
+        img2 = roundrect(img1)
+        plt.imshow(img2, 'gray', vmax = 255, vmin = 0)
+        plt.show()
+
