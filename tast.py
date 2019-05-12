@@ -9,52 +9,26 @@ Created on Mon Apr 29 21:11:25 2019
 import numpy as np
 import cv2 as cv
 from matplotlib import pyplot as plt
+from roundrect import roundrect
 
-cap1 = cv.VideoCapture('data/03.mp4')
-cap2 = cv.VideoCapture('data/02.mp4')
-
-ret,frame1 = cap1.read()
-ret,frame2 = cap2.read()
-
-frame1 = cv.cvtColor(frame1, cv.COLOR_BGR2GRAY)
-frame2 = cv.cvtColor(frame2, cv.COLOR_BGR2GRAY)
-
-height, width = frame1.shape[:2]
-frame1 = cv.resize(frame1,(width // 10, height // 10), interpolation = cv.INTER_CUBIC)
+n = 1
+for f in ['data/01.mp4', 'data/02.mp4', 'data/03.mp4', 'data/04.mp4']:
+    cap = cv.VideoCapture(f)
+    ret,frame = cap.read()
+    frame_cr = roundrect(cv.cvtColor(frame, cv.COLOR_BGR2GRAY))# frame_cr = frame[450:2550, 450:2550]
+    
+    cv.imwrite('data/r_%s.jpeg' % n, frame_cr)
+    n += 1
 
 
-def square(ρ, φ):
-    a = ρ
-    b = ρ * np.sin(φ)
-    return np.sqrt(a**2 + b**2)
 
-def polar_to_cart(ρ, φ, center):
-    x = ρ * np.cos(φ) + center[0]
-    y = ρ * np.sin(φ) + center[1]
-    return int(x), int(y)
 
-def circleToRect(frame):
-    w, h = frame.shape[:2]
-    c    = (w//2, h//2)
-    rez = np.zeros([w,h])
-    ρ = w // 2
-    for x in range(w):
-        for y in range(h):
-            φ = np.arctan((y - c[0])/(x - c[1])) if x - c[1] != 0 else np.radians(90)
-            nx, ny = polar_to_cart(ρ, φ, c)
-            try:
-                rez[w-x-1,y] = frame[nx, ny]
-            except IndexError:
-                print(x, y, nx, ny)
-                break
-        ρ -= 1
-    return rez
-
-plt.imshow(frame1, 'gray')
-plt.show()
-frame1 = circleToRect(frame1)
-plt.imshow(frame1, 'gray')
-plt.show()
+#frame1 = roundrect(frame1)
+#plt.imshow(frame1, 'gray')
+#plt.show()
+## frame2 = roundrect(frame2)
+#plt.imshow(frame2, 'gray')
+#plt.show()
 
 #cv.waitKey(300)
 #cv.imshow('frame',frame2)
