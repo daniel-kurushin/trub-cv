@@ -18,7 +18,6 @@ def roundrect(img):
         y = ρ * np.sin(φ) + center[1]
         return int(x), int(y)
 
-    img = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
     h, w = img.shape[:2]
     c = w//2, h//2
     out = np.ones([w,h]) * 255
@@ -37,7 +36,7 @@ if __name__ == '__main__':
     from matplotlib import pyplot as plt
     
     for i in [0,1,2,3,4]:
-        img1 = cv.imread('in%s.png' % i)
+        img1 = cv.cvtColor(cv.imread('in%s.png' % i), cv.COLOR_BGR2GRAY)
 
         plt.imshow(img1, 'gray', vmax = 255, vmin = 0)
         plt.show()
