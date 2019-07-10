@@ -7,6 +7,18 @@ Created on Wed Jul 10 14:45:19 2019
 """
 
 from bs4 import BeautifulSoup as BS
+from PIL import Image
+from urllib.parse import quote
+
+def _new_tag(soup, name, attrs, content):
+    tag = soup.new_tag(name)
+    for k, v in attrs:
+        draw[k] = v
+    if type(content) == str:
+        tag.string = content
+    else:
+        tag.insert(content)
+    
 
 def image(soup, name):
     """
@@ -18,7 +30,8 @@ def image(soup, name):
        svg:width="16cm"
        svg:height="7cm"
        draw:z-index="0">
-       <draw:image xlink:href="Спиралеобразный%20робот.jpeg"
+       <draw:image 
+         xlink:href="Спиралеобразный%20робот.jpeg"
          xlink:type="simple"
          xlink:show="embed"
          xlink:actuate="onLoad"
@@ -28,18 +41,31 @@ def image(soup, name):
      <text:line-break/>gfhghf
    </text:p>
     """
-    height = "%scm" % 7
+    img = Image.open(name)
+    w, h = img.size
+    mime = 
+    height = 
     draw_props = {
         'draw:style-name':"fr1",
         'draw:name':name,
         'text:anchor-type':"as-char",
         'svg:width':"16cm",
-        'svg:height':height,
+        'svg:height':"%scm" % round(h * 16 / w, 2),
         'draw:z-index':"0"
     }
     p = soup.new_tag('text:p')
     p['text:style-name'] = 'P3'
     draw = soup.new_tag('draw:frame')
+    for k, v in draw_props:
+        draw[k] = v
+    image_props = {
+         'xlink:href':quote(name)
+         'xlink:type':"simple"
+         'xlink:show':"embed"
+         'xlink:actuate':"onLoad"
+         'draw:filter-name':"&lt;Все форматы&gt;"
+         'loext:mime-type':"image/%s" % img.format.lower()
+    }
     
 
 doc = BS(open('/tmp/in.fodt').read(), features='xml')
