@@ -285,24 +285,7 @@
     <text:sequence-decl text:display-outline-level="0" text:name="Drawing"/>
     <text:sequence-decl text:display-outline-level="0" text:name="Figure"/>
    </text:sequence-decls>
-   <text:p text:style-name="P2">d</text:p>
-   <text:p text:style-name="P3">
-     <draw:frame
-       draw:style-name="fr1"
-       draw:name="Изображение1"
-       text:anchor-type="as-char"
-       svg:width="16cm"
-       svg:height="7cm"
-       draw:z-index="0">
-       <draw:image xlink:href="Спиралеобразный%20робот.jpeg"
-         xlink:type="simple"
-         xlink:show="embed"
-         xlink:actuate="onLoad"
-         draw:filter-name="&lt;Все форматы&gt;"
-         loext:mime-type="image/jpeg"/>
-     </draw:frame>
-     <text:line-break/>gfhghf
-   </text:p>
+   <text:p text:style-name="P2" place='here'></text:p>
   </office:text>
  </office:body>
 </office:document>
