@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="utf-8"?>
+<office:document office:mimetype="application/vnd.oasis.opendocument.text" office:version="1.2" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:css3t="http://www.w3.org/TR/css3-text/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:officeooo="http://openoffice.org/2009/office" xmlns:ooo="http://openoffice.org/2004/office" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:rpt="http://openoffice.org/2005/report" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <office:meta>
+  <meta:creation-date>
+   2019-07-10T13:37:05.446721955
+  </meta:creation-date>
+  <dc:date>
+   2019-07-10T13:39:45.142308138
+  </dc:date>
+  <meta:editing-duration>
+   PT2M45S
+  </meta:editing-duration>
+  <meta:editing-cycles>
+   1
+  </meta:editing-cycles>
+  <meta:document-statistic meta:character-count="2" meta:image-count="0" meta:non-whitespace-character-count="2" meta:object-count="0" meta:page-count="1" meta:paragraph-count="2" meta:table-count="0" meta:word-count="2"/>
+  <meta:generator>
+   LibreOffice/6.2.3.2$Linux_X86_64 LibreOffice_project/20$Build-2
+  </meta:generator>
+ </office:meta>
+ <office:settings>
+  <config:config-item-set config:name="ooo:view-settings">
+   <config:config-item config:name="ViewAreaTop" config:type="long">
+    2
+   </config:config-item>
+   <config:config-item config:name="ViewAreaLeft" config:type="long">
+    0
+   </config:config-item>
+   <config:config-item config:name="ViewAreaWidth" config:type="long">
+    22735
+   </config:config-item>
+   <config:config-item config:name="ViewAreaHeight" config:type="long">
+    8897
+   </config:config-item>
+   <config:config-item config:name="ShowRedlineChanges" config:type="boolean">
+    true
+   </config:config-item>
+   <config:config-item config:name="InBrowseMode" config:type="boolean">
+    false
+   </config:config-item>
+   <config:config-item-map-indexed config:name="Views">
+    <config:config-item-map-entry>
+     <config:config-item config:name="ViewId" config:type="string">
+      view2
+     </config:config-item>
+     <config:config-item config:name="ViewLeft" config:type="long">
+      5577
+     </config:config-item>
+     <config:config-item config:name="ViewTop" config:type="long">
+      2501
+     </config:config-item>
+     <config:config-item config:name="VisibleLeft" config:type="long">
+      0
+     </config:config-item>
+     <config:config-item config:name="VisibleTop" config:type="long">
+      2
+     </config:config-item>
+     <config:config-item config:name="VisibleRight" config:type="long">
+      22733
+     </config:config-item>
+     <config:config-item config:name="VisibleBottom" config:type="long">
+      8897
+     </config:config-item>
+     <config:config-item config:name="ZoomType" config:type="short">
+      0
+     </config:config-item>
+     <config:config-item config:name="ViewLayoutColumns" config:type="short">
+      1
+     </config:config-item>
+     <config:config-item config:name="ViewLayoutBookMode" config:type="boolean">
+      false
+     </config:config-item>
+     <config:config-item config:name="ZoomFactor" config:type="short">
+      152
+     </config:config-item>
+     <config:config-item config:name="IsSelectedFrame" config:type="boolean">
+      false
+     </config:config-item>
+     <config:config-item config:name="AnchoredTextOverflowLegacy" config:type="boolean">
+      false
+     </config:config-item>
+    </config:config-item-map-entry>
+   </config:config-item-map-indexed>
+  </config:config-item-set>
+  <config:config-item-set config:name="ooo:configuration-settings">
+   <config:config-item config:name="PrintProspect" config:type="boolean">
+    false
+   </config:config-item>
+   <config:config-item config:name="PrintLeftPages" config:type="boolean">
+    true
+   </config:config-item>
+   <config:config-item config:name="PrintPageBackground" config:type="boolean">
+    true
+   </config:config-item>
+   <config:config-item config:name="PrintControls" config:type="boolean">
+    true
+   </config:config-item>
+   <config:config-item config:name="PrintAnnotationMode" config:type="short">
+    0
+   </config:config-item>
+   <config:config-item config:name="PrintGraphics" config:type="boolean">
+    true
+   </config:config-item>
+   <config:config-item config:name="PrintRightPages" config:type="boolean">
+    true
+   </config:config-item>
+   <config:config-item config:name="PrintFaxName" config:type="string"/>
+   <config:config-item config:name="PrintPaperFromSetup" config:type="boolean">
+    false
+   </config:config-item>
+   <config:config-item config:name="PrintTextPlaceholder" config:type="boolean">
+    false
+   </config:config-item>
+   <config:config-item config:name="EmptyDbFieldHidesPara" config:type="boolean">
+    true
+   </config:config-item>
+   <config:config-item config:name="ApplyParagraphMarkFormatToNumbering" config:type="boolean">
+    false
+   </config:config-item>
+   <config:config-item config:name="PrintReversed" config:type="boolean">
+    false
+   </config:config-item>
+   <config:config-item config:name="TabOverMargin" config:type="boolean">
+    false
+   </config:config-item>
+   <config:config-item config:name="EmbedAsianScriptFonts" config:type="boolean">
+    true
+   </config:config-item>
+   <config:config-item config:name="EmbedLatinScriptFonts" config:type="boolean">
+    true
+   </config:config-item>
+   <config:config-item config:name="DisableOffPagePositioning" config:type="boolean">
+    false
+   </config:config-item>
+   <config:config-item config:name="EmbedOnlyUsedFonts" config:type="boolean">
+    false
+   </config:config-item>
+   <config:config-item config:name="EmbedFonts" config:type="boolean">
+    false
+   </config:config-item>
+   <config:config-item config:name="SurroundTextWrapSmall" config:type="boolean">
+    false
+   </config:config-item>
+   <config:config-item config:name="BackgroundParaOverDrawings" config:type="boolean">
+    false
+   </config:config-item>
+   <config:config-item config:name="ClippedPictures" config:type="boolean">
+    false
+   </config:config-item>
+   <config:config-item config:name="FloattableNomargins" config:type="boolean">
+    false
+   </config:config-item>
+   <config:config-item config:name="UnbreakableNumberings" config:type="boolean">
+    false
+   </config:config-item>
+   <config:config-item config:name="EmbedSystemFonts" config:type="boolean">
+    false
+   </config:config-item>
+   <config:config-item config:name="TabOverflow" config:type="boolean">
+    true
+   </config:config-item>
+   <config:config-item config:name="PrintTables" config:type="boolean">
+    true
+   </config:config-item>
+   <config:config-item config:name="PrintSingleJobs" config:type="boolean">
+    false
+   </config:config-item>
+   <config:config-item config:name="SmallCapsPercentage66" config:type="boolean">
+    false
+   </config:config-item>
+   <config:config-item config:name="CollapseEmptyCellPara" config:type="boolean">
+    true
+   </config:config-item>
+   <config:config-item config:name="RsidRoot" config:type="int">
+    564021
+   </config:config-item>
+   <config:config-item config:name="IsLabelDocument" config:type="boolean">
+    false
+   </config:config-item>
+   <config:config-item config:name="PrinterName" config:type="string"/>
+   <config:config-item config:name="OutlineLevelYieldsNumbering" config:type="boolean">
+    false
+   </config:config-item>
+   <config:config-item config:name="UpdateFromTemplate" config:type="boolean">
+    true
+   </config:config-item>
+   <config:config-item config:name="PrintBlackFonts" config:type="boolean">
+    false
+   </config:config-item>
+   <config:config-item config:name="TableRowKeep" config:type="boolean">
+    false
+   </config:config-item>
+   <config:config-item config:name="IgnoreTabsAndBlanksForLineCalculation" config:type="boolean">
+    false
+   </config:config-item>
+   <config:config-item config:name="EmbedComplexScriptFonts" config:type="boolean">
+    true
+   </config:config-item>
+   <config:config-item config:name="UseOldPrinterMetrics" config:type="boolean">
+    false
+   </config:config-item>
+   <config:config-item config:name="InvertBorderSpacing" config:type="boolean">
+    false
+   </config:config-item>
+   <config:config-item config:name="SaveGlobalDocumentLinks" config:type="boolean">
+    false
+   </config:config-item>
+   <config:config-item config:name="TabsRelativeToIndent" config:type="boolean">
+    true
+   </config:config-item>
+   <config:config-item config:name="Rsid" config:type="int">
+    564021
+   </config:config-item>
+   <config:config-item config:name="EmbeddedDatabaseName" config:type="string"/>
+   <config:config-item config:name="SaveThumbnail" config:type="boolean">
+    true
+   </config:config-item>
+   <config:config-item config:name="PrintProspectRTL" config:type="boolean">
+    false
+   </config:config-item>
+   <config:config-item config:name="PrintEmptyPages" config:type="boolean">
+    false
+   </config:config-item>
+   <config:config-item config:name="ApplyUserData" config:type="boolean">
+    true
+   </config:config-item>
+   <config:config-item config:name="PrintHiddenText" config:type="boolean">
+    false
+   </config:config-item>
+   <config:config-item config:name="AddParaTableSpacingAtStart" config:type="boolean">
+    true
+   </config:config-item>
+   <config:config-item config:name="FieldAutoUpdate" config:type="boolean">
+    true
+   </config:config-item>
+   <config:config-item config:name="UseOldNumbering" config:type="boolean">
+    false
+   </config:config-item>
+   <config:config-item config:name="AddParaTableSpacing" config:type="boolean">
+    true
+   </config:config-item>
+   <config:config-item config:name="MsWordCompTrailingBlanks" config:type="boolean">
+    false
+   </config:config-item>
+   <config:config-item config:name="IgnoreFirstLineIndentInNumbering" config:type="boolean">
+    false
+   </config:config-item>
+   <config:config-item config:name="PrinterPaperFromSetup" config:type="boolean">
+    false
+   </config:config-item>
+   <config:config-item config:name="CharacterCompressionType" config:type="short">
+    0
+   </config:config-item>
+   <config:config-item config:name="SaveVersionOnClose" config:type="boolean">
+    false
+   </config:config-item>
+   <config:config-item config:name="ChartAutoUpdate" config:type="boolean">
+    true
+   </config:config-item>
+   <config:config-item config:name="PrinterIndependentLayout" config:type="string">
+    high-resolution
+   </config:config-item>
+   <config:config-item config:name="IsKernAsianPunctuation" config:type="boolean">
+    false
+   </config:config-item>
+   <config:config-item config:name="UseFormerObjectPositioning" config:type="boolean">
+    false
+   </config:config-item>
+   <config:config-item config:name="TreatSingleColumnBreakAsPageBreak" config:type="boolean">
+    false
+   </config:config-item>
+   <config:config-item config:name="MathBaselineAlignment" config:type="boolean">
+    true
+   </config:config-item>
+   <config:config-item config:name="AddFrameOffsets" config:type="boolean">
+    false
+   </config:config-item>
+   <config:config-item config:name="AddVerticalFrameOffsets" config:type="boolean">
+    false
+   </config:config-item>
+   <config:config-item config:name="SubtractFlysAnchoredAtFlys" config:type="boolean">
+    false
+   </config:config-item>
+   <config:config-item config:name="AddParaSpacingToTableCells" config:type="boolean">
+    true
+   </config:config-item>
+   <config:config-item config:name="AddExternalLeading" config:type="boolean">
+    true
+   </config:config-item>
+   <config:config-item config:name="CurrentDatabaseDataSource" config:type="string"/>
+   <config:config-item config:name="AllowPrintJobCancel" config:type="boolean">
+    true
+   </config:config-item>
+   <config:config-item config:name="ProtectForm" config:type="boolean">
+    false
+   </config:config-item>
+   <config:config-item config:name="UseFormerLineSpacing" config:type="boolean">
+    false
+   </config:config-item>
+   <config:config-item config:name="PrintDrawings" config:type="boolean">
+    true
+   </config:config-item>
+   <config:config-item config:name="UseFormerTextWrapping" config:type="boolean">
+    false
+   </config:config-item>
+   <config:config-item config:name="UnxForceZeroExtLeading" config:type="boolean">
+    false
+   </config:config-item>
+   <config:config-item config:name="TabAtLeftIndentForParagraphsInList" config:type="boolean">
+    false
+   </config:config-item>
+   <config:config-item config:name="RedlineProtectionKey" config:type="base64Binary"/>
+   <config:config-item config:name="PropLineSpacingShrinksFirstLine" config:type="boolean">
+    true
+   </config:config-item>
+   <config:config-item config:name="ConsiderTextWrapOnObjPos" config:type="boolean">
+    false
+   </config:config-item>
+   <config:config-item config:name="StylesNoDefault" config:type="boolean">
+    false
+   </config:config-item>
+   <config:config-item config:name="LinkUpdateMode" config:type="short">
+    1
+   </config:config-item>
+   <config:config-item config:name="AlignTabStopPosition" config:type="boolean">
+    true
+   </config:config-item>
+   <config:config-item config:name="DoNotJustifyLinesWithManualBreak" config:type="boolean">
+    false
+   </config:config-item>
+   <config:config-item config:name="DoNotResetParaAttrsForNumFont" config:type="boolean">
+    false
+   </config:config-item>
+   <config:config-item config:name="CurrentDatabaseCommandType" config:type="int">
+    0
+   </config:config-item>
+   <config:config-item config:name="LoadReadonly" config:type="boolean">
+    false
+   </config:config-item>
+   <config:config-item config:name="DoNotCaptureDrawObjsOnPage" config:type="boolean">
+    false
+   </config:config-item>
+   <config:config-item config:name="CurrentDatabaseCommand" config:type="string"/>
+   <config:config-item config:name="PrinterSetup" config:type="base64Binary"/>
+   <config:config-item config:name="ClipAsCharacterAnchoredWriterFlyFrames" config:type="boolean">
+    false
+   </config:config-item>
+  </config:config-item-set>
+ </office:settings>
+ <office:scripts>
+  <office:script script:language="ooo:Basic">
+   <ooo:libraries xmlns:ooo="http://openoffice.org/2004/office" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </office:script>
+ </office:scripts>
+ <office:font-face-decls>
+  <style:font-face style:name="Lohit Devanagari1" svg:font-family="'Lohit Devanagari'"/>
+  <style:font-face style:font-family-generic="roman" style:name="Times New Roman" svg:font-family="'Times New Roman'"/>
+  <style:font-face style:font-family-generic="roman" style:font-pitch="variable" style:name="Liberation Serif" svg:font-family="'Liberation Serif'"/>
+  <style:font-face style:font-family-generic="swiss" style:font-pitch="variable" style:name="Liberation Sans" svg:font-family="'Liberation Sans'"/>
+  <style:font-face style:font-family-generic="system" style:font-pitch="variable" style:name="Lohit Devanagari" svg:font-family="'Lohit Devanagari'"/>
+  <style:font-face style:font-family-generic="system" style:font-pitch="variable" style:name="Noto Sans CJK SC Regular" svg:font-family="'Noto Sans CJK SC Regular'"/>
+  <style:font-face style:font-family-generic="system" style:font-pitch="variable" style:name="Noto Serif CJK SC" svg:font-family="'Noto Serif CJK SC'"/>
+ </office:font-face-decls>
+ <office:styles>
+  <style:default-style style:family="graphic">
+   <style:graphic-properties draw:end-line-spacing-horizontal="0.283cm" draw:end-line-spacing-vertical="0.283cm" draw:fill-color="#729fcf" draw:shadow-offset-x="0.3cm" draw:shadow-offset-y="0.3cm" draw:start-line-spacing-horizontal="0.283cm" draw:start-line-spacing-vertical="0.283cm" fo:wrap-option="no-wrap" style:flow-with-text="false" svg:stroke-color="#3465a4"/>
+   <style:paragraph-properties style:font-independent-line-spacing="false" style:line-break="strict" style:text-autospace="ideograph-alpha">
+    <style:tab-stops/>
+   </style:paragraph-properties>
+   <style:text-properties fo:country="RU" fo:font-size="12pt" fo:language="ru" style:country-asian="CN" style:country-complex="IN" style:font-name="Liberation Serif" style:font-name-asian="Noto Serif CJK SC" style:font-name-complex="Lohit Devanagari" style:font-size-asian="10.5pt" style:font-size-complex="12pt" style:language-asian="zh" style:language-complex="hi" style:letter-kerning="true" style:use-window-font-color="true"/>
+  </style:default-style>
+  <style:default-style style:family="paragraph">
+   <style:paragraph-properties fo:hyphenation-ladder-count="no-limit" fo:orphans="2" fo:widows="2" style:line-break="strict" style:punctuation-wrap="hanging" style:tab-stop-distance="1.251cm" style:text-autospace="ideograph-alpha" style:writing-mode="page"/>
+   <style:text-properties fo:country="RU" fo:font-size="12pt" fo:hyphenate="false" fo:hyphenation-push-char-count="2" fo:hyphenation-remain-char-count="2" fo:language="ru" style:country-asian="CN" style:country-complex="IN" style:font-name="Liberation Serif" style:font-name-asian="Noto Serif CJK SC" style:font-name-complex="Lohit Devanagari" style:font-size-asian="10.5pt" style:font-size-complex="12pt" style:language-asian="zh" style:language-complex="hi" style:letter-kerning="true" style:use-window-font-color="true"/>
+  </style:default-style>
+  <style:default-style style:family="table">
+   <style:table-properties table:border-model="collapsing"/>
+  </style:default-style>
+  <style:default-style style:family="table-row">
+   <style:table-row-properties fo:keep-together="auto"/>
+  </style:default-style>
+  <style:style style:class="text" style:family="paragraph" style:name="Standard"/>
+  <style:style style:class="text" style:family="paragraph" style:name="Heading" style:next-style-name="Text_20_body" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:keep-with-next="always" fo:margin-bottom="0.212cm" fo:margin-top="0.423cm" loext:contextual-spacing="false"/>
+   <style:text-properties fo:font-family="'Liberation Sans'" fo:font-size="14pt" style:font-family-asian="'Noto Sans CJK SC Regular'" style:font-family-complex="'Lohit Devanagari'" style:font-family-generic="swiss" style:font-family-generic-asian="system" style:font-family-generic-complex="system" style:font-name="Liberation Sans" style:font-name-asian="Noto Sans CJK SC Regular" style:font-name-complex="Lohit Devanagari" style:font-pitch="variable" style:font-pitch-asian="variable" style:font-pitch-complex="variable" style:font-size-asian="14pt" style:font-size-complex="14pt"/>
+  </style:style>
+  <style:style style:class="text" style:display-name="Text body" style:family="paragraph" style:name="Text_20_body" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:line-height="115%" fo:margin-bottom="0.247cm" fo:margin-top="0cm" loext:contextual-spacing="false"/>
+  </style:style>
+  <style:style style:class="list" style:family="paragraph" style:name="List" style:parent-style-name="Text_20_body">
+   <style:text-properties style:font-family-complex="'Lohit Devanagari'" style:font-name-complex="Lohit Devanagari1" style:font-size-asian="12pt"/>
+  </style:style>
+  <style:style style:class="extra" style:family="paragraph" style:name="Caption" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:margin-bottom="0.212cm" fo:margin-top="0.212cm" loext:contextual-spacing="false" text:line-number="0" text:number-lines="false"/>
+   <style:text-properties fo:font-size="12pt" fo:font-style="italic" style:font-family-complex="'Lohit Devanagari'" style:font-name-complex="Lohit Devanagari1" style:font-size-asian="12pt" style:font-size-complex="12pt" style:font-style-asian="italic" style:font-style-complex="italic"/>
+  </style:style>
+  <style:style style:class="index" style:family="paragraph" style:name="Index" style:parent-style-name="Standard">
+   <style:paragraph-properties text:line-number="0" text:number-lines="false"/>
+   <style:text-properties style:font-family-complex="'Lohit Devanagari'" style:font-name-complex="Lohit Devanagari1" style:font-size-asian="12pt"/>
+  </style:style>
+  <style:style style:class="extra" style:family="paragraph" style:name="Footer" style:parent-style-name="Standard">
+   <style:paragraph-properties text:line-number="0" text:number-lines="false">
+    <style:tab-stops>
+     <style:tab-stop style:position="8.5cm" style:type="center"/>
+     <style:tab-stop style:position="17cm" style:type="right"/>
+    </style:tab-stops>
+   </style:paragraph-properties>
+  </style:style>
+  <text:outline-style style:name="Outline">
+   <text:outline-level-style style:num-format="" text:level="1">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style style:num-format="" text:level="2">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style style:num-format="" text:level="3">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style style:num-format="" text:level="4">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style style:num-format="" text:level="5">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style style:num-format="" text:level="6">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style style:num-format="" text:level="7">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style style:num-format="" text:level="8">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style style:num-format="" text:level="9">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style style:num-format="" text:level="10">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+  </text:outline-style>
+  <text:notes-configuration style:num-format="1" text:footnotes-position="page" text:note-class="footnote" text:start-numbering-at="document" text:start-value="0"/>
+  <text:notes-configuration style:num-format="i" text:note-class="endnote" text:start-value="0"/>
+  <text:linenumbering-configuration style:num-format="1" text:increment="5" text:number-lines="false" text:number-position="left" text:offset="0.499cm"/>
+ </office:styles>
+ <office:automatic-styles>
+  <style:style style:family="paragraph" style:name="P1" style:parent-style-name="Footer">
+   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
+  </style:style>
+  <style:style style:family="paragraph" style:name="P2" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:line-height="200%" fo:margin-left="0cm" fo:margin-right="0cm" fo:text-align="justify" fo:text-indent="1.499cm" style:auto-text-indent="false" style:justify-single-word="false"/>
+   <style:text-properties officeooo:paragraph-rsid="00089b35" officeooo:rsid="00089b35" style:font-name="Times New Roman"/>
+  </style:style>
+  <style:style style:family="paragraph" style:name="P3" style:parent-style-name="Footer">
+   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
+  </style:style>
+  <style:page-layout style:name="pm1">
+   <style:page-layout-properties fo:margin-bottom="2.499cm" fo:margin-left="3cm" fo:margin-right="1cm" fo:margin-top="2cm" fo:page-height="29.7cm" fo:page-width="21.001cm" style:footnote-max-height="0cm" style:num-format="1" style:print-orientation="portrait" style:writing-mode="lr-tb">
+    <style:footnote-sep style:adjustment="left" style:color="#000000" style:distance-after-sep="0.101cm" style:distance-before-sep="0.101cm" style:line-style="solid" style:rel-width="25%" style:width="0.018cm"/>
+   </style:page-layout-properties>
+   <style:header-style/>
+   <style:footer-style>
+    <style:header-footer-properties draw:fill="none" fo:background-color="transparent" fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0.499cm" fo:min-height="0.998cm" style:dynamic-spacing="false"/>
+   </style:footer-style>
+  </style:page-layout>
+ </office:automatic-styles>
+ <office:master-styles>
+  <style:master-page style:name="Standard" style:page-layout-name="pm1">
+   <style:footer>
+    <text:p text:style-name="P1">
+     <text:page-number text:select-page="current">
+      1
+     </text:page-number>
+    </text:p>
+   </style:footer>
+  </style:master-page>
+ </office:master-styles>
+ <office:body>
+  <office:text>
+   <text:sequence-decls>
+    <text:sequence-decl text:display-outline-level="0" text:name="Illustration"/>
+    <text:sequence-decl text:display-outline-level="0" text:name="Table"/>
+    <text:sequence-decl text:display-outline-level="0" text:name="Text"/>
+    <text:sequence-decl text:display-outline-level="0" text:name="Drawing"/>
+    <text:sequence-decl text:display-outline-level="0" text:name="Figure"/>
+   </text:sequence-decls>
+   <text:p place="here" text:style-name="P2"/>
+   <text:p text:style-name="P2">
+    УДК 621.865.8
+   </text:p>
+   <text:p text:style-name="P2">
+    Информационная система для внутритрубной диагностики на основе интеллектуальной роботизированной платформы
+   </text:p>
+   <text:p text:style-name="P2">
+    Д.С. Курушин,  Р.А. Файзрахманов,  А.М. Щелудяков,  Д.В. Яруллин
+   </text:p>
+   <text:p text:style-name="P2">
+    D. S. Kurushin, R. A. Faizrakhmanov, A. M. Sheludyakov, D. V. Yarullin
+   </text:p>
+   <text:p text:style-name="P2">
+    ПНИПУ, PNRPU.
+   </text:p>
+   <text:p text:style-name="P2">
+    kurushin.daniel@ya.ru, fayzrakhmanov@gmail.com, sheludyakov_am@mail.ru, d.v.yarullin@ya.ru
+   </text:p>
+   <text:p text:style-name="P2">
+    В статье описывается подход к созданию информационной системы для внутритрубной диагностики газонаполненных труб больного диаметра и протяженности. Такая проблема  возникает как при строительстве новых газо- и нефтепроводов, так и при техобслуживании  уже существующих. Предлагаемые системы можно поделить на самоходные и несамоходные, управляемые и автономные. Рассматриваемая в статье система относится к автономным самоходным и рассчитана на преодолевание значительных расстояний (десятки километров) по трубопроводу диаметром 700-1400 мм. Рассмотрены основные проблемы, возникающие при такого рода работах, а также пути их преодоления. Диагностика трубопроводов производится различными способами, в данной работе рассмотрен визуальный подход, основанный на анализе панорамных видео, записанных камерами робота. Анализ может быть произведен как в автоматическом, так и в ручном режимах. Для этого предлагается архитектура технического средства просмотра видеопотока 360о.
+   </text:p>
+   <text:p text:style-name="P2">
+    The article describes an approach to the creation of an information system for in-line diagnostics of gas-filled pipes of large diameter and length. This problem arises both in the construction of new gas and oil pipelines and in the maintenance of existing ones. The most of proposed systems can be divided into self-propelled and non-self-propelled, controlled and autonomous. The system considered in the article refers to autonomous self-propelled and is designed to overcome considerable distances (tens of kilometers) through a pipeline with a diameter of 700-1400 mm. The main problem arising in this field as well as ways to overcome them discussed in this paper. Pipeline diagnostics is carried out in various ways, in this article we consider a visual approach based on the panoramic videorecord analysis. The analysis can be performed both in automatic and manual modes. For this purpose, the architecture of the 360-video stream viewer is proposed.
+   </text:p>
+   <text:p text:style-name="P2">
+    расширенный реферат научной статьи объемом не менее 350 слов (для русскоязычных статей - на английском языке, для англоязычных статей - на русском языке);
+   </text:p>
+   <text:p text:style-name="P2">
+    ключевые слова (3-10 слов) (на русском и английском языках);
+   </text:p>
+   <text:p text:style-name="P2">
+    = Введение
+   </text:p>
+   <text:p text:style-name="P2">
+    В настоящее время в связи с разработкой новых месторождений нефти и газа в трубнодоступных местах, в связи с выходом на новые рынки сбыта, обветшанием ранее созданной инфраструктуры трубопроводов растет актуальность средств диагностики трубопроводов. Диагностика новых трубопроводов необходима в связи с возрастающими требованиями к качеству и долговечности сети, применению новых материалов и способов прокладки.
+   </text:p>
+   <text:p text:style-name="P2">
+    Ранее проложенные трубопроводы нуждаются в периодическом осмотре и контроле качества конструкции, ее исправности. Также важной задачей является уточнение траектории пролегания трубопровода. Подвижки грунта, ошибки при проведении работ приводят к усложнению поиска и устранения повреждений, особенно при заглублении трубопровода в грунт.
+   </text:p>
+   <text:p text:style-name="P2">
+    Актуальность исследовния подтверждается количеством и составом публикаций по этой теме. .....
+   </text:p>
+   <text:p text:style-name="P2">
+    = Классификация внутритрубных роботов
+   </text:p>
+   <text:p text:style-name="P2">
+    Диагностические роботы по принципу передвижения внутри трубопроводов разделяются на устройства с собственными движителями и без собственных движителей, которые перемещаются, используя избыточное давление потока вещества в трубопроводе. Классификация роботов по способу передвижения приведена на рисунке /p Классификация роботов по типу передвижения/.
+   </text:p>
+   <text:p text:style-name="P2">
+    Необходимо отметить, что мобильные диагностические роботы с колесными типами движителей обладают более простой конструкцией, но при использовании различных схем с изменяемой геометрией могут предоставить такие преимущества, как движение по наклонным (вертикальным) поверхностям и преодоление встречающихся в трубопроводе препятствий [a53].
+   </text:p>
+   <text:p text:style-name="P2">
+    Рис. Классификация роботов по типу передвижения
+   </text:p>
+   <text:p text:style-name="P2">
+    Рассмотрим подробнее основных представителей всех классов.
+   </text:p>
+   <text:p text:style-name="P2">
+    = Обзор существующих роботов-дефектоскопов
+   </text:p>
+   <text:p text:style-name="P2">
+    Снаряды-дефектоскопы являются диагностическими устройствами [a1], [a2], [a3], [a4], [a5], [a6] которые много лет применяются коммерческими фирмами для дефектоскопии и облуживания магистральных газопроводов. Снаряд-дефектоскоп --- пассивный робот, поскольку не имеет собственных движителей. Снаряд-дефектоскоп предназначен для перемещения внутри газопровода устройства для выявления дефектов с целью записи полученной информации с определением координат обнаруженных дефектов [a7], [a8], [a9]. Обычно такие роботы используются для инспекции больших и относительно прямых трубопроводов, поскольку снаряд имеет ограничения в прохождении ряда прецедентов, встречающихся в трубе. На практике процедура диагностирования газопроводов [a10] данным способом является достаточно трудной и дорогой операцией. Значительное время занимает подготовка газопровода перед проведением диагностического обследованием. А сам процесс диагностики может производиться только высококвалифицированными специалистами. На рисунке /p Внутритрубный магнитный снаряд-дефектоскоп Крот СК/ показан внутритрубный магнитный снаряд-дефектоскоп Крот СК [a11], предназначенный для обследования газопроводов с минимально допустимым радиусом изгиба.
+   </text:p>
+   <text:p text:style-name="P2">
+    Рис. Внутритрубный магнитный снаряд-дефектоскоп Крот СК
+   </text:p>
+   <text:p text:style-name="P2">
+    Колесный тип представлен разрабатываемыми в разных странах роботами, отличающихся системами передвижения, количеством колес, типами электроприводов и другими немаловажными параметрами [a12], [a13]. Роботы колесного типа можно разделить на две группы --- автомобильной конструкции и c многоопорным кинематическим механизмом. Характерные функциональности колесных роботов автомобильной конструкции можно выявить, рассмотрев ряд роботов, разработанных в НПО «ТАРИС». Данная фирма занимается производством и продажей роботов для ремонта и диагностики трубопроводов. Робот FW 300 Tractor, изображенный на рисунке /р Робот FW 300 Tractor/, позволяет производить диагностику в трубах диаметром от 300 мм до 2500 мм. Робот снабжен специальными колесами и мощными двигателями, что дает возможность исследовать частично заполненные и сильно загрязненные трубопроводы [a14]. Данный робот имеет простую конструкцию, в основе которой лежит роботизированная платформа автомобильного типа, и ручное дистанционное управление.
+   </text:p>
+   <text:p text:style-name="P2">
+    Рис. Робот FW 300 Tractor
+   </text:p>
+   <text:p text:style-name="P2">
+    Специалистами НПО «ТАРИС» также спроектированы и производятся модели роботов Р100, Р200 М и С200 D. Фрезерный робот С200 представляет собой самоходную колесную машину, снабженную цветной поворотной камерой и фрезерной головкой. Данный робот способен проходить по трубопроводу на расстояние до 300 м для произведения телеинспекции и фрезерных работ [a15]. С целью измерения толщины стенки трубы робот С200 D оснащается ультразвуковым контактным датчиком с собственным приводом выдвижения и системой крепления датчика, которая обеспечивает его надежный контакт со стенкой трубопровода (рисунок /p Робот С200 D/). Робот С200 D предназначен для измерения толщины стенки чугунных, стальных и других трубопроводов с диаметром от 200 до 600
+   </text:p>
+   <text:p text:style-name="P2">
+    Рис. Робот С200 D
+   </text:p>
+   <text:p text:style-name="P2">
+    Принцип управления, следующий: робот С200 D, перемещаясь по трубопроводу, по команде оператора останавливается в выбранных местах, после чего производится выдвижение датчика толщинометра до контакта с внутренней стенкой трубы и измерение толщины ее стенки [a15]. При перемещении робота С200 D по трубопроводу ведется видеообследование, которое позволяет предварительно выявить местоположения вероятных дефектов. Для прохождения неровных поверхностей трубопроводов разработан робот Р200 М, обладающей повышенной проходимостью, который имеет колеса с пневматическими шинами большого радиуса с грунтозацепами и двигатель повышенной мощности. Вездеходные качества нового Р200 М дополняются системой бортового поворота для преодоления поворотов и объезда препятствий в трубах большого диаметра, а также датчиком крена, который позволяет оператору контролировать наклон робота и избегать опрокидывания. Системы управления комплексами С200 (на базе фрезерного робота С200 D) и Р200 (на базе колесного робота Р200 М) оснащены оптической системой измерения размеров объектов внутри трубопроводов VideоRuler, которая построена на базе рабочей станции СD3 (ноутбук) с программным обеспечением TELESСANROBOT. Оператор робота, отмечая мышкой две точки на видеоизображении, может получить данные о реальных размерах объекта. Кроме этого, необходимые измерения можно производить после проведения инспекции, используя пакет программного обеспечения TELESСANROBОТ или TELESСANLAB. В данном случае оператор загружает в компьютер протокол телеинспекции трубопровода роботом, составленный с помощью TELESСANROBOT, и производит необходимые измерения на «фотографии» объекта. Система VideoRuler актуальна при локальном ремонте трубопровода, при приемке трубопроводных систем в эксплуатацию (для определения зазора в раструбных соединениях), при подготовке труб к санации и др. Робототехнический комплекс Р100 (рисунок /p Робототехнический комплекс Р100/ ) --- это система, которая позволяет не только производить телеинспекцию незаполненных трубопроводов колесным самоходным роботом Р100, но и обследовать частично заполненные коллекторы специальным плавающим модулем W100, а также обследовать скважины с использованием цветной поворотной видеокамеры. Диапазон допустимых для обследования роботом Р100 диаметров трубопроводов составляет 90-900 мм, максимальная протяженность маршрута робота составляет 200 м.
+   </text:p>
+   <text:p text:style-name="P2">
+    Рис. Робототехнический комплекс Р100
+   </text:p>
+   <text:p text:style-name="P2">
+    Основным недостатком рассмотренных роботов колесного автомобильной конструкцией является невозможность прохождения сильнонаклонных и вертикальных участков. Для исключения проскальзывания ведущих движителей и обеспечения прохождения участков трубопровода с изменяемым поперечным сечением необходимо использовать конструкцию с многоопорным кинематическим механизмом, который за счет увеличения силы давления колес на трубу может обеспечить высокий коэффициент трения между движителями робота и внутренней поверхностью трубопровода. Подробное описание нескольких моделей роботов с многоопорным кинематическим механизмом приведено в следующем пункте главы. Гусеничный тип --- аналог колесного робота, у которого в качестве движителя используются гусеницы [a16], [a17], [a18], [a19]. В работе [a20] представлен гусеничный робот, предназначенный для диагностики трубопроводов диаметром от 80 до 100 мм. Роботизированная система состоит из корпуса робота, системы управления, CMOS-камеры, акселерометра, датчика температуры и модуля ZigBee. Блок управления роботом основан на микроконтроллере Atmega16 и Atmel studio IDE (рисунок /p Гусеничные роботы/, а). В работе [a21] описан гусеничный внутритрубный робот, Разработанный в Tarbiat Modares University (Иран) (рисунок /p Гусеничные роботы/, б).
+   </text:p>
+   <text:p text:style-name="P2">
+    Рис. Гусеничные роботы
+   </text:p>
+   <text:p text:style-name="P2">
+    Стенонажимной тип --- такой тип роботов, которые имеют возможность подниматься по вертикальным участкам трубопроводам, что является их большим преимуществом. Данные роботы имеют механизм, позволяющий им держаться на стенках трубопровода за счет давления, создаваемого данным механизмом, т.е. робот сжимается и разжимается внутри трубы, тем самым обеспечивая надежное сцепление с ее стенками. Примером робота стенонажимного типа является электромагнитный пушпульный миниробот, который разработанный в ИПМ РАН им. А.Ю. Ишлинского под руководством профессора В.Г. Градецкого [a22], [a23]. Данный робот с электромагнитным движителем выполнен в виде соленоида с возможным движением штока при закреплении, используя управляемые упоры корпуса, или возможным движением корпуса относительно штока при закреплении с помощью управляемых упоров самого штока. Роботы шагающего типа --- роботизированные конструкции с различным числом конечностей. Шагающие роботы обладают большой маневренностью, при этом основным их недостатком является сложность конструкции, а также малая скорость передвижения. Шагающий робот, который имеет размеры порядка метра, предназначенный для движения в трубах, описан в работах российских исследователей [a24], [a25]. За последнее время произошло существенное продвижение вперед в области миниатюризации шагающих роботов. Так в Калифорнийском университете США при помощи технологии изготовления углеродных волокон создан миниатюрный шагающий робот [a26], имеющий линейные размеры порядка десятков миллиметров и приводящийся в движение пьезоактюаторами. На рисунке 6 показан шагающий внутритрубный робот MORITZ (рисунок /p Шагающий внутритрубный робот MORITZ/), разработанный в Institute of Applied Mechanics, Technical University Munich, Германия [a27]. Данный робот имеет длину около 0.75 м и предназначен для навигации в газопроводах диаметром 600-700 мм.
+   </text:p>
+   <text:p text:style-name="P2">
+    Рис. Шагающий внутритрубный робот MORITZ
+   </text:p>
+   <text:p text:style-name="P2">
+    Роботы ползущего типа перемещаются, производя периодические изменения формы корпуса. Иностранные разработки роботов данного типа приведены в работах [a28], [a29], [a30], [a31]. В работе [a32] рассмотрен способ движения многозвенного механизма, который имеет пять звеньев, с использованием только «медленных» движений. Такая конструкция робота может быть применена и для движения внутри трубопроводов. В данном случае звенья робота будут служить ему как корпусом, так и упорами, с помощью которых робот закрепляется внутри трубы. Для движения внутри трубы без использования дополнительных упоров роботу понадобятся, как минимум пять звеньев в случае прямолинейной трубы и шесть в случае, если трубопровод имеет закругления. На рисунке /p Многозвенный робот «Змеелок»/ представлено изображение многозвенного робота, созданного в ЦНИИ робототехники и технической кибернетики (Санкт- Петербург) [a33], [a34], [a35]. «Змеелок» --- змеевидный робот, который состоит из унифицированных мехатронных шарниров-модулей механической структуры, способной осуществлять локомоции и манипуляции. Конструкция модуля представляет собой двухстепенной активный шарнир с пересекающимися взаимно перпендикулярными осями, которые находятся в одной плоскости. Последняя модель робота «ЗМЕЕЛОК-3» имеет существенно лучшие силомоментные и скоростные показатели по сравнению с двумя ранними версиями: скорость перемещения робота при прямом ходе составляет 20 см/с, при боковом ходе (в трубопроводах может использоваться для преодоления поворотов и тройников) --- 40 см/с. Для управления данным роботом применяются разработанные в [a36] алгоритмы, использующие аналитические зависимости и вербальные правила. Основной задачей программного обеспечения верхнего контура управления является формирование управляющих команд, позволяющих генерировать локомоционные моды движения. Программное обеспечение состоит из трех основных уровней: уровня взаимодействия с оператором, основного уровня и уровня работы с устройствами ввода/вывода.
+   </text:p>
+   <text:p text:style-name="P2">
+    Рис. Многозвенный робот «Змеелок»
+   </text:p>
+   <text:p text:style-name="P2">
+    Винтообразный тип ---  (рисунок /p Спиралеобразный робот/) движение роботов данного типа схоже с движением завинчивающегося винта, робот как бы вкручивается в трубопровод [a37], [a38], [a39], [a40]. Примером такого робота является совместно разработанный Osaka Gas Co и Osaka University спиралеобразный робот, представленный на рисунке 8. Длина робота --- 1 м, диаметр --- 170 мм [a42].
+   </text:p>
+   <text:p text:style-name="P2">
+    Рис. Спиралеобразный робот
+   </text:p>
+   <text:p text:style-name="P2">
+    В работе [a43] рассмотрен внутритрубный колесный робот, разработанный в Niigata University (Япония), который оснащен рулевым механизмом и двухопорным (относительно сечения трубопровода) устройством, распирающим пары колес внутри трубы. Размер робота порядка десятков сантиметров, вес около килограмма (рисунок /p Внутритрубный колесный робот, разработанный в Niigata University (Япония)/). Недостатком конструкции является то, что робот способен преодолевать не все виды поворотов трубопровода. Компенсацией данного недостатка может служить использование конструкций с трехопорным относительно сечения трубопровода механизмом. Данная конструкция является оптимальной, что доказано в работе [a44], где описан вариант реализации робота с четырехопорным кинематическим механизмом. При движении в повороте в большинстве случаев только у трех колесных модулей из четырех может быть контакт с внутренней поверхностью трубопровода. Все колесные модули имеют контакт с внутренней поверхностью трубы только при четырех значениях угла поворота (угол между направлением поворота и первым колесным модулем), равного 45°, 135°, 225° и 315°. В противном случае, только три колесных модуля могут иметь контакт с трубопроводом, а остальные колеса работают вхолостую или проскальзывают.
+   </text:p>
+   <text:p text:style-name="P2">
+    Рис. Внутритрубный колесный робот, разработанный в Niigata University (Япония)
+   </text:p>
+   <text:p text:style-name="P2">
+    В Sungkyunkwan University (Южная Корея) разработаны роботы под названием MRINSPECT (Multifunctional Robotic crawler for INpipe inSPECTion), изображенные на рисунке /p Роботы MRINSPECT I и MRINSPECT II/ [a45].
+   </text:p>
+   <text:p text:style-name="P2">
+    Рис. Роботы MRINSPECT I и MRINSPECT II
+   </text:p>
+   <text:p text:style-name="P2">
+    а --- внешний вид MRINSPECT I; б --- внешний вид MRINSPECT II; в --- кинематический механизм MRINSPECT I; г --- кинематический механизм MRINSPECT II
+   </text:p>
+   <text:p text:style-name="P2">
+    Робот MRINSPECT I имеет складной механизм, состоящий из модулей, расположенных под углом 120° относительно друг друга. Колеса приводятся в действие двигателем постоянного тока посредством ремённой передачи. Робот имеет пружины, создающие равное усилие на каждый колесный модуль. Преодоление роботом тройников невозможно. Робот MRINSPECT II имеет измененный вид рычажно-пружинной конструкции для проведения изменения диаметра робота в соответствии с диаметром трубопровода. 40 Аппаратные средства робота MRINSPECT III, изображенного на рисунке 1.17, состоят из встроенного контроллера, драйверов двигателей, измерительных модулей, модуля оператора, модуля цифровой обработки сигнала. В передней и задней частях робота установлено по одной видеокамере.
+   </text:p>
+   <text:p text:style-name="P2">
+    Рисунок 11. Робот MRINSPECT III
+   </text:p>
+   <text:p text:style-name="P2">
+    Управление роботом при преодолении тройников основано на использовании специально разработанного рулевого механизма, включающего двойной активный универсальный сустав (DAUJ --- Double Active Universal Joint).
+   </text:p>
+   <text:p text:style-name="P2">
+    = Постановка проблемы
+   </text:p>
+   <text:p text:style-name="P2">
+    = Модели и алгоритмы внутритрубных измерений
+   </text:p>
+   <text:p text:style-name="P2">
+    = Технологии реализации измерительной системы
+   </text:p>
+   <text:p text:style-name="P2">
+    = Постановка и реализация модельных экспериментов
+   </text:p>
+   <text:p>
+    sdfdfs
+   </text:p>
+  </office:text>
+ </office:body>
+</office:document>
