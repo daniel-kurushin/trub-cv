@@ -1,4 +1,51 @@
-Информационная система для внутритрубной диагностики на основе интеллектуальной роботизированной платформы
+УДК 621.865.8
+
+Информационная система для внутритрубной диагностики на основе интеллектуальной
+роботизированной платформы
+
+Д.С. Курушин,  Р.А. Файзрахманов,  А.М. Щелудяков,  Д.В. Яруллин
+
+D. S. Kurushin, R. A. Faizrakhmanov, A. M. Sheludyakov, D. V. Yarullin
+
+ПНИПУ, PNRPU.
+
+kurushin.daniel@ya.ru, fayzrakhmanov@gmail.com, sheludyakov_am@mail.ru, d.v.yarullin@ya.ru
+
+В статье описывается подход к созданию информационной системы для внутритрубной
+диагностики газонаполненных труб больного диаметра и протяженности. Такая
+проблема  возникает как при строительстве новых газо- и нефтепроводов, так и при
+техобслуживании  уже существующих. Предлагаемые системы можно поделить на
+самоходные и несамоходные, управляемые и автономные. Рассматриваемая в статье
+система относится к автономным самоходным и рассчитана на преодолевание
+значительных расстояний (десятки километров) по трубопроводу диаметром
+700-1400 мм. Рассмотрены основные проблемы, возникающие при такого рода работах,
+а также пути их преодоления. Диагностика трубопроводов производится различными
+способами, в данной работе рассмотрен визуальный подход, основанный на анализе
+панорамных видео, записанных камерами робота. Анализ может быть произведен как
+в автоматическом, так и в ручном режимах. Для этого предлагается архитектура
+технического средства просмотра видеопотока 360о.
+
+The article describes an approach to the creation of an information system for
+in-line diagnostics of gas-filled pipes of large diameter and length. This
+problem arises both in the construction of new gas and oil pipelines and in the
+maintenance of existing ones. The most of proposed systems can be divided into
+self-propelled and non-self-propelled, controlled and autonomous. The system
+considered in the article refers to autonomous self-propelled and is designed to
+overcome considerable distances (tens of kilometers) through a pipeline with a
+diameter of 700-1400 mm. The main problem arising in this field as well as ways
+to overcome them discussed in this paper. Pipeline diagnostics is carried out in
+various ways, in this article we consider a visual approach based on the
+panoramic videorecord analysis. The analysis can be performed both in automatic
+and manual modes. For this purpose, the architecture of the 360-video stream
+viewer is proposed.
+
+расширенный реферат научной статьи объемом не менее 350 слов (для русскоязычных статей - на английском языке, для англоязычных статей - на русском языке);
+
+ключевые слова (3-10 слов) (на русском и английском языках);
+текст статьи;
+список литературы;
+краткие сведения об авторах (на русском и английском языках).
+
 
 1 Актуальность
 2 Разработанность
