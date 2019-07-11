@@ -79,7 +79,7 @@ def image(soup, number, name):
         )
     )
     img.insert(1, _new_tag(soup,'text:line-break',{},None))
-    img.insert(2,"Рис. %s --- %s" % (number, name))
+    img.insert(2,"Рис. %s — %s" % (number, name))
     return img
 
 doc = BS(open('in.fodt').read(), features='xml')
