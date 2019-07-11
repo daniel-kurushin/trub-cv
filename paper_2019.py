@@ -22,7 +22,7 @@ def _new_tag(soup, name, attrs, content):
             tag.insert(0, content)
     return tag
 
-def image(soup, name):
+def image(soup, number, name):
     """
     <text:p text:style-name="P3">
      <draw:frame
@@ -53,7 +53,7 @@ def image(soup, name):
     w, h = img.size
     img = _new_tag(soup, 
         'text:p', 
-        {'text:style-name':'P3'},
+        {'text:style-name':'PCentered'},
         _new_tag(soup,
             'draw:frame',
             {
@@ -79,7 +79,7 @@ def image(soup, name):
         )
     )
     img.insert(1, _new_tag(soup,'text:line-break',{},None))
-    img.insert(2,name)
+    img.insert(2,"Рис. %s --- %s" % (number, name))
     return img
 
 doc = BS(open('in.fodt').read(), features='xml')
@@ -88,20 +88,85 @@ to_insert = doc.find('text:p', place='here')
 
 P = []
 L = ''
-for l in [ x.strip('\n') for x in open('paper-2019').readlines() ]:
+C = {}
+
+x = open('paper-2019').read()
+for bib in [ x.strip('\n') for x in open('paper-2019.bib').readlines() ]:
+    try:
+        idx, paper = re.findall('(\d+)\.\s(.*)', bib )[0]
+        try:
+            ref = ' '.join(re.findall('(.{10}).*?\..*?(\d{4}).*', paper)[0])
+        except IndexError:
+            ref = re.findall('.*(http.*)', paper)[0]
+        while ref in C.keys():
+            ref += 'a'
+        C.update({ref:{'idx':idx,'paper':paper}})
+    except Exception as e:
+        print(bib)
+        raise e
+        
+RT = []
+nidx = 0
+C1 = []
+for cite in re.findall('(\[a.*?\])', x):
+    n = re.findall('.*?(\d+).*', cite)[0]
+    ref = [ (k, v) for k, v in C.items() if v['idx'] == n]
+    try:
+        nidx += 1
+        C1 += [(nidx, ref[0][1]['paper'])]
+        RT += [(cite, ('[%s]' % ref[0][0], '[%s]' % nidx))]
+    except IndexError:
+        print(ref)
+
+for _from, _to in RT:
+    x = x.replace(_from, _to[0])
+for _from, _to in RT:
+    x = x.replace(_to[0], _to[1])
+    
+
+for l in [ v.strip('\n') for v in x.split('\n') ]:
     if not l:
         P += [L]
         L = ''
     else:
         L += ' %s' % l
 
+picnumber = 0
+headnumber = 0
+pictures = {}
+headers = {}
+cites = {}
+
 for p in [ x.strip() for x in P]:
     if p.startswith('Рис.'):
+        picnumber += 1
         name = re.findall(string=p, pattern='Рис. (.*)')[0]
-        ins = image(doc, name)
+        ins = image(doc, picnumber, name)
+        pictures.update({name:picnumber})
+    elif p.startswith('='):
+        headnumber += 1
+        header = "%s. %s" % (headnumber, p.strip('='))
+        ins = _new_tag(doc, 'text:p', {'text:style-name':'Pheader'}, header)
+        headers.update({header:headnumber})
     else:
-        ins = _new_tag(doc, 'text:p', {'text:style-name':'P2'}, p)
+        ins = _new_tag(doc, 'text:p', {'text:style-name':'Pnormal'}, p)
     to_insert.insert_after(ins)
     to_insert = ins
 
+for k, v in C1:
+    p = "%s. %s" % (k, v)
+    ins = _new_tag(doc, 'text:p', {'text:style-name':'Pnormal'}, p)
+    to_insert.insert_after(ins)
+    to_insert = ins
+    
+citeno = 0
+for p in doc('text:p'):
+    text = str(p.string)
+    if text:
+        for picref in re.findall('/p (.*?)/', text):
+            n = pictures[picref]
+            text = re.sub('/p %s/' % picref, str(n), text)
+    if str(p.string) != text:
+        p.string = text
+        
 print(doc.prettify())    
