@@ -242,19 +242,53 @@
   <text:linenumbering-configuration text:number-lines="false" text:offset="0.499cm" style:num-format="1" text:number-position="left" text:increment="5"/>
  </office:styles>
  <office:automatic-styles>
-  <style:style style:name="P1" style:family="paragraph" style:parent-style-name="Footer">
+  <style:style style:name="Pfootnote" style:family="paragraph" style:parent-style-name="Footer">
    <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
   </style:style>
-  <style:style style:name="P2" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:line-height="200%" fo:text-align="justify" style:justify-single-word="false" fo:text-indent="1.499cm" style:auto-text-indent="false"/>
-   <style:text-properties style:font-name="Times New Roman" officeooo:rsid="00089b35" officeooo:paragraph-rsid="00089b35"/>
+  <style:style style:name="Pnormal" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties
+     fo:margin-left="0cm"
+     fo:margin-right="0cm"
+     fo:line-height="200%"
+     fo:text-align="justify"
+     style:justify-single-word="false"
+     fo:text-indent="1.5cm"
+     style:auto-text-indent="false"/>
+   <style:text-properties
+     style:font-name="Times New Roman"
+     officeooo:rsid="00089b35"
+     officeooo:paragraph-rsid="00089b35"/>
   </style:style>
-  <style:style style:name="P3" style:family="paragraph" style:parent-style-name="Standard" style:master-page-name="">
-   <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:line-height="200%" fo:text-align="center" style:justify-single-word="false" fo:text-indent="0cm" style:auto-text-indent="false" style:page-number="auto" fo:keep-with-next="always"/>
-   <style:text-properties style:font-name="Times New Roman" officeooo:rsid="00089b35" officeooo:paragraph-rsid="00089b35"/>
+  <style:style style:name="PCentered" style:family="paragraph" style:parent-style-name="Standard" style:master-page-name="">
+   <style:paragraph-properties
+     fo:margin-left="0cm"
+     fo:margin-right="0cm"
+     fo:line-height="200%"
+     fo:text-align="center"
+     style:justify-single-word="false"
+     fo:text-indent="0cm"
+     style:auto-text-indent="false"
+     style:page-number="auto"
+     fo:keep-with-next="always"/>
+   <style:text-properties
+     style:font-name="Times New Roman"
+     officeooo:rsid="00089b35"
+     officeooo:paragraph-rsid="00089b35"/>
   </style:style>
-  <style:style style:name="P4" style:family="paragraph" style:parent-style-name="Footer">
-   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
+  <style:style style:name="Pheader" style:family="paragraph" style:parent-style-name="Footer">
+    <style:paragraph-properties
+      fo:margin-left="0cm"
+      fo:margin-right="0cm"
+      fo:line-height="200%"
+      fo:text-align="left"
+      style:justify-single-word="false"
+      fo:text-indent="1.5cm"
+      style:auto-text-indent="false"/>
+  <style:text-properties
+    style:font-name="Times New Roman"
+    officeooo:rsid="00089b35"
+    fo:font-weight="bold"
+    officeooo:paragraph-rsid="00089b35"/>
   </style:style>
   <style:style style:name="fr1" style:family="graphic" style:parent-style-name="Graphics">
    <style:graphic-properties style:vertical-pos="top" style:vertical-rel="baseline" style:horizontal-pos="center" style:horizontal-rel="paragraph" style:mirror="none" fo:clip="rect(0cm, 0cm, 0cm, 0cm)" draw:luminance="0%" draw:contrast="0%" draw:red="0%" draw:green="0%" draw:blue="0%" draw:gamma="100%" draw:color-inversion="false" draw:image-opacity="100%" draw:color-mode="standard"/>
@@ -272,7 +306,7 @@
  <office:master-styles>
   <style:master-page style:name="Standard" style:page-layout-name="pm1">
    <style:footer>
-    <text:p text:style-name="P1"><text:page-number text:select-page="current">1</text:page-number></text:p>
+    <text:p text:style-name="Pfootnote"><text:page-number text:select-page="current">1</text:page-number></text:p>
    </style:footer>
   </style:master-page>
  </office:master-styles>
@@ -285,7 +319,16 @@
     <text:sequence-decl text:display-outline-level="0" text:name="Drawing"/>
     <text:sequence-decl text:display-outline-level="0" text:name="Figure"/>
    </text:sequence-decls>
-   <text:p text:style-name="P2" place='here'></text:p>
+   <text:p text:style-name="Pnormal" place='here'></text:p>
   </office:text>
- </office:body>
-</office:document>
+ </
+ office:body>
+</office
+:document>
+
+
+
+
+
+
+5
