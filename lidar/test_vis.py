@@ -2,7 +2,7 @@ from rplidar import RPLidar, RPLidarException
 from math import sin, cos, radians
 from matplotlib import pyplot as plt
 from time import time
-
+from utilites import dump
 TIME_LIMIT = time() + 10
 
 x_coordinates = []
@@ -22,6 +22,16 @@ for n in range(0, 4):
     except RPLidarException:
         print('fail!')
 
+out = []
+for new_scan, quality, φ, ρ in lidar.iter_measurments():
+    out += [(new_scan, quality, φ, ρ)]
+    if len(out) > 1000:
+        break
+    
+dump(out, 'scan.json')
+
+raise Exception
+
 def normalize(layer):
     rez = []
     for φ0 in range(360):
@@ -30,9 +40,10 @@ def normalize(layer):
         for z, φ, ρ in layer:
             Δφ = abs(φ -φ0) 
             if Δφ < Δφ_min:
-                out = (z, φ, ρ)
+                out = (z, φ0, ρ)
                 Δφ_min = Δφ
         rez += [out]
+    return rez
         
 model = []
 layer = []
@@ -41,25 +52,23 @@ try:
     φ0 = 0
     for new_scan, quality, φ, ρ in lidar.iter_measurments():
         if φ < φ0:
-            layer = []
             model += [normalize(layer)]
+            layer = []
         else:
-            z += 0.1
+            z += 1
             layer += [(z, φ, ρ)]
         φ0 = φ
         if (time() >= TIME_LIMIT):
             break    
     lidar.disconnect()
-    
     verts = ""
     faces = ""
-    
     n = 0
-    for angle, dist, z in model:
-        angle = radians(angle)
-        x = dist * cos(angle)
-        y = dist * sin(angle)
-        verts += "v %s %s %s\n" % (x, y, z)
+    for layer in model:
+        for angle, dist, z in layer:
+            x = dist * cos(radians(angle))
+            y = dist * sin(radians(angle))
+            verts += "v %s %s %s\n" % (x, y, z)
 
 #    nf = 1
 #    for z in range(len(model.keys())-1):
