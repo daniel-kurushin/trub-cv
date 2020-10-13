@@ -8,7 +8,7 @@ Stepper a_stepper(STEPS, 6, 7, 8, 9);
 
 void setup()
 {
-  a_stepper.setSpeed(60);
+  a_stepper.setSpeed(10);
   Serial.begin(9600);
 }
 
