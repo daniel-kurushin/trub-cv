@@ -3,19 +3,35 @@
 #define STEPS 200
 #define LIMIT_A A1
 #define LIMIT_B A2
+#define ON_LIMIT_A ! digitalRead(LIMIT_A)
+#define ON_LIMIT_B ! digitalRead(LIMIT_B)
+
 
 Stepper a_stepper(STEPS, 6, 7, 8, 9);
 
 void setup()
 {
-  a_stepper.setSpeed(10);
+  a_stepper.setSpeed(8);
   Serial.begin(9600);
+  pinMode( 5, 1);
+  pinMode(10, 1);
+}
+
+void enable()
+{
+  digitalWrite( 5, 1);
+  digitalWrite(10, 1);
+}
+
+void disable()
+{
+  digitalWrite( 5, 0);
+  digitalWrite(10, 0);
 }
 
 void go(int steps)
 {
-  analogWrite( 5, 63);
-  analogWrite(10, 63);
+  enable();
   a_stepper.step(steps);
 }
 
@@ -29,33 +45,30 @@ void loop()
   switch (state)
   {
     case ST_IDLE:
-      delay(1000);
-      if (! digitalRead(LIMIT_A)) state = ST_LIMIT_A;
-      else if (! digitalRead(LIMIT_B)) state = ST_LIMIT_B;
+      delay(3000);
+      if (ON_LIMIT_A) state = ST_LIMIT_A;
+      else if (ON_LIMIT_B) state = ST_LIMIT_B;
       else state = ST_GO_A;
       break;
     case ST_LIMIT_A:
-      analogWrite( 5, 0);
-      analogWrite(10, 0);
-      delay(1000);
+      disable();
+      delay(3000);
       state = ST_GO_B;
       break;
     case ST_LIMIT_B:
-      analogWrite( 5, 0);
-      analogWrite(10, 0);
-      delay(1000);
+      disable();
+      delay(3000);
       state = ST_GO_A;
       break;
     case ST_GO_A:
-      if (digitalRead(LIMIT_A)) go( 10);
-      else state = ST_LIMIT_A;
+      if (ON_LIMIT_A) state = ST_LIMIT_A;
+      else go(-10);
       break;
     case ST_GO_B:
-      if (digitalRead(LIMIT_B)) go(-10);
-      else state = ST_LIMIT_B;
+      if (ON_LIMIT_B) state = ST_LIMIT_B;
+      else go( 10);
       break;
     case ST_ERROR:
-      analogWrite( 5, 0);
-      analogWrite(10, 0);
+      disable();
   }
 }
